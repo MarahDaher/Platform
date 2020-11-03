@@ -1,0 +1,24 @@
+.info{
+  font-size: 18px;
+  margin-top: 17px;
+}
+
+.chart{
+  display: flex;
+}
+
+.btn{
+  background-color: #A7C957;
+  color: black;
+  border: none;
+  margin: 10px;
+  width: 60px;
+}
+
+h1{
+  color:  #386641;
+}
+
+.chaar{
+  margin-top: 20px;
+}

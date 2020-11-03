@@ -1,0 +1,31 @@
+<div class="" *ngIf="datastatus2">
+  <div class="col-6 info">
+    <h1>{{response?.Title}}</h1>
+    <em>{{response?.Genre}}</em>
+    <h3>{{response?.Director}}</h3>
+    <img src={{response?.Poster}}
+        style="width: 150px;float: right; margin-top: -80px;">
+    <p>{{response?.Plot}}</p>
+    <i>{{response?.Runtime}}</i>
+</div>
+<div class="">
+    <button type="button"
+            (click)="onChangeStatus('pie')"
+            class="btn btn-primary">pie</button>
+    <button type="button"
+            (click)="onChangeStatus('bar')"
+            class="btn btn-primary">bar</button>
+    <div *ngIf = "clickItem =='pie'">
+      <div class="col-md-6 chaar"
+          *ngFor="let ratingIndex of Data"
+                  >
+          <app-chart  [chartInps]="ratingIndex"
+                      ></app-chart>
+      </div>
+    </div>
+
+   <div class="col-xl-6" *ngIf="clickItem == 'bar'">
+    <app-chart2 [chartInps2]=Data
+                [titlechar]=Title></app-chart2>
+</div>
+

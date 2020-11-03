@@ -1,0 +1,48 @@
+.row {
+  margin-right: 0;
+}
+table {
+    height: 100vh;
+    margin-left: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border-collapse: collapse;
+    overflow: hidden;
+    color: black;
+    box-shadow: 0 0 20px rgb(0 0 0 / 42%);
+}
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #386641;
+  color: white;
+  padding-left: 15px;
+}
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+tr{  border-bottom: 1px solid black;}
+tbody td {
+  position: relative;
+}
+tbody td:hover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -9999px;
+  bottom: -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index: -1;
+}
+.btn{
+  background-color: #A7C957;
+  color: black;
+  border: none;
+}
